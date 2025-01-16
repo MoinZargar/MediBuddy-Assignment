@@ -1,8 +1,8 @@
-import type { IconSection } from "../types/icon"
+import  { IconSectionType } from "../types/icon"
 import { IconCard } from './IconCard'
 
 interface IconSectionProps { 
-  content: IconSection; 
+  content: IconSectionType; 
 }
 
 export default function IconSection({ content }: IconSectionProps) {

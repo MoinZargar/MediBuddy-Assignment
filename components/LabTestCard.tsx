@@ -8,7 +8,7 @@ interface LabTestCardProps {
   labTest: Package;
 }
 
-const LabTestCard = ({ labTest }: LabTestCardProps) => {
+export default function LabTestCard({ labTest }: LabTestCardProps) {
   const discountPercentage = Math.round(((labTest.priceRange - labTest.price) / labTest.priceRange) * 100);
 
   return (
@@ -70,4 +70,3 @@ const LabTestCard = ({ labTest }: LabTestCardProps) => {
   );
 };
 
-export default LabTestCard;

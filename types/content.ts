@@ -1,5 +1,6 @@
-import { IconSection } from './icon'
-import { BannerSection } from './banner'
-import { HealthCheckupSection } from './health-checkup'
+import { IconSectionType } from './icon'
+import { BannerSectionType } from './banner'
+import { HealthCheckupSectionType } from './health-checkup'
+import { LifestylePackageSectionType } from './life-style-package';
 
-export type PageContent = IconSection & BannerSection & HealthCheckupSection;
+export type PageContent = IconSectionType & BannerSectionType & HealthCheckupSectionType & LifestylePackageSectionType;

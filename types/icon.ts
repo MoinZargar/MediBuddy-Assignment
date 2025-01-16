@@ -33,7 +33,7 @@ export interface ApiInput {
     minimumAndroidAppVersion?: string
   }
   
-  export interface IconSection {
+  export interface IconSectionType {
     id: string
     title: string
     props:IconProps[]

@@ -4,10 +4,10 @@ import SearchBar from '../components/SearchBar';
 import IconSection from '../components/IconSection';
 import BannerSection from '../components/BannerSection'; 
 import HealthPackagesSection from '../components/HealthPackagesSection';
-import BookLabTest from '../components/BookLabTestSection';
 import { PageContent } from '../types/content';
 import BookLabTestSection from '@/components/BookLabTestSection';
-
+import LifestylePackages from '@/components/LifestylePackages';
+import LabsVisited from '@/components/LabsVisited';
 
 async function getContent(): Promise<PageContent[]> {
     const response = await axios.get('https://677f757b0476123f76a68a42.mockapi.io/api/labs/v1/page_config');
@@ -29,6 +29,8 @@ export default async function Home() {
         <BannerSection content={content[1]} /> 
         <HealthPackagesSection content={content[2]} />
         <BookLabTestSection content={content[2]}/>
+        <LabsVisited />
+        <LifestylePackages content={content[3]}/>
       </main>
    
   );

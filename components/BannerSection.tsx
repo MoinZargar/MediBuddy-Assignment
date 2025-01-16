@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import type { BannerSection } from '../types/banner'
+import type { BannerSectionType } from '../types/banner'
 
 interface BannerSectionProps {
-  content: BannerSection
+  content: BannerSectionType
 }
 
 export default function BannerSection({ content }: BannerSectionProps) {

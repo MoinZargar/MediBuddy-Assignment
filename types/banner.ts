@@ -7,7 +7,7 @@ export interface BannerProps {
     checkForCorporates: boolean
   }
   
-  export interface BannerSection {
+  export interface BannerSectionType {
     id: string
     title: string
     props: BannerProps[]

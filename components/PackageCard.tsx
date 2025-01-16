@@ -12,7 +12,7 @@ export default function PackageCard({ package: pkg }: PackageCardProps) {
     return null;
   }
   return (
-    <Card className="w-full bg-white shadow-sm hover:shadow-md transition-shadow h-96 pt-4">
+    <Card className="w-full bg-white shadow-2xl hover:shadow-3xl transition-shadow h-96 pt-4">
       <CardHeader className="p-4 pb-0">
         <div className="flex items-start justify-between">
           <h3 className="text-lg font-bold text-[#050A4E]">{pkg.packageDisplayName}</h3>

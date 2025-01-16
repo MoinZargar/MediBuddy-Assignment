@@ -1,9 +1,9 @@
-import type { HealthCheckupSection } from "../types/health-checkup"
+import type { HealthCheckupSectionType } from "../types/health-checkup"
 import PackageCarousel from "./PackageCarousel"
 import CategoryTab from "./CategoryTab"
 
 interface HealthCheckupSectionProps {
-  content: HealthCheckupSection
+  content: HealthCheckupSectionType
 }
 
 export default function HealthPackagesSection({ content }: HealthCheckupSectionProps) {

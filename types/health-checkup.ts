@@ -47,7 +47,7 @@ export interface DiscountInfo {
     discountRuleId?: string;
   }
   
-  export interface HealthCheckupSection {
+  export interface HealthCheckupSectionType {
     id: string;
     heading: string;
     categories: {

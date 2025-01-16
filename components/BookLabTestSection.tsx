@@ -1,9 +1,9 @@
-import type { HealthCheckupSection } from "../types/health-checkup"
+import type { HealthCheckupSectionType } from "../types/health-checkup"
 import CategoryTab from "./CategoryTab"
 import LabTestCard from "./LabTestCard"
 
 interface HealthCheckupSectionProps {
-  content: HealthCheckupSection
+  content: HealthCheckupSectionType
 }
 
 export default function BookLabTestSection({ content }: HealthCheckupSectionProps) {
