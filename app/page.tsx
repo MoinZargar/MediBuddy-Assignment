@@ -4,7 +4,7 @@ import SearchBar from '../components/SearchBar';
 import IconSection from '../components/IconSection';
 import BannerSection from '../components/BannerSection'; 
 import { PageContent } from '../types/content';
-
+import HealthCheckupSection from '../components/HealthCheckupSection';
 
 async function getContent(): Promise<PageContent[]> {
     const response = await axios.get('https://677f757b0476123f76a68a42.mockapi.io/api/labs/v1/page_config');
@@ -24,6 +24,7 @@ export default async function Home() {
         <SearchBar placeholder="Find lab tests, diagnostics centres"/>
         <IconSection content={content[0]}/>
         <BannerSection content={content[1]} /> 
+        <HealthCheckupSection content={content[2]} />
       </main>
    
   );
