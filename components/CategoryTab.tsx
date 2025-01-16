@@ -10,7 +10,7 @@ export default function CategoryTab({ categories }: { categories: string[] }) {
                             key={category}
                             className={`
                 rounded-full px-6 py-3 text-sm whitespace-nowrap
-                bg-white text-[#050A4E]"
+                bg-white text-[#050A4E] text-shadow-lg border border-gray-300 text-black font-bold font-bold"
             
               `}
                         >

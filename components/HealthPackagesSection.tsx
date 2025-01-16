@@ -6,11 +6,11 @@ interface HealthCheckupSectionProps {
   content: HealthCheckupSection
 }
 
-export default function HealthCheckupSection({ content }: HealthCheckupSectionProps) {
+export default function HealthPackagesSection({ content }: HealthCheckupSectionProps) {
   const categories = Object.values(content.categories)[0]
   const packages = content.props[0].packages;
   return (
-    <section className="w-full bg-[#E8F2FE] py-6">
+    <section className="w-full bg-[#E8F2FE] px-4 py-6">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-[22px] font-bold text-[#050A4E]">
           {content.heading}

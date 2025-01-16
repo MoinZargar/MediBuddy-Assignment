@@ -21,7 +21,7 @@ export default function PackageCard({ package: pkg }: PackageCardProps) {
       <CardContent className="p-4 space-y-4 h-80">
         <div className="flex items-center gap-2 text-[#4C57B9]">
           <Clock className="w-4 h-4" />
-          <span className="text-sm text-[#050A4E]">{pkg.reportsTatText}</span>
+          <span className="text-sm font-bold">{pkg.reportsTatText}</span>
         </div>
 
         <div className="space-y-2">
