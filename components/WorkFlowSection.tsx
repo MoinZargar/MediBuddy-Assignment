@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { steps } from '../lib/workflowData'
 
-export default function WorkFlow() {
+export default function WorkFlowSection() {
     return(
         <section className="py-12 bg-white">
       <div className="container mx-auto px-4">

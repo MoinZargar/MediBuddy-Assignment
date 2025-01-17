@@ -1,9 +1,10 @@
 import React from 'react';
-import { Building2, FlaskConical, MapPin, ShieldCheck } from 'lucide-react';
-export default function TrustStats() {
+import { ShieldCheck } from 'lucide-react';
+
+export default function TrustStatSection() {
   return (
     <div className="p-6 py-8">
-      {/* Header */}
+     
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-3xl font-bold mb-2">
           <span className="text-gray-900 font-Lexend-Deca">Trusted by </span>
@@ -20,7 +21,7 @@ export default function TrustStats() {
         {/* Diagnostic Centres */}
         <div className="flex items-start gap-3">
           <div className="text-blue-600">
-            <Building2 className="w-10 h-10" />
+            <img src="/assets/icons/trustStats/microscope.png" className="w-10 h-10" />
           </div>
           <div>
             <p className="font-bold text-gray-900">200+ Approved</p>
@@ -31,7 +32,7 @@ export default function TrustStats() {
         {/* Lab Tests */}
         <div className="flex items-start gap-3">
           <div className="text-blue-600">
-            <FlaskConical className="w-10 h-10" />
+            <img src="/assets/icons/trustStats/flask.png" className="w-10 h-10" />
           </div>
           <div>
             <p className="font-bold text-gray-900">1200+ Lab Tests</p>
@@ -42,7 +43,7 @@ export default function TrustStats() {
         {/* Pincodes */}
         <div className="flex items-start gap-3">
           <div className="text-blue-600">
-            <MapPin className="w-10 h-10" />
+            <img src="/assets/icons/trustStats/location.png" className="w-10 h-10" />
           </div>
           <div>
             <p className="font-bold text-gray-900">1200+ Pincodes</p>

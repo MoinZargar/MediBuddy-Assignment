@@ -5,7 +5,7 @@ import { LifestylePackageSectionType } from '../types/life-style-package';
 interface LifestylePackagesProps {
     content: LifestylePackageSectionType;
 }
-export default function LifestylePackages({content}: LifestylePackagesProps) {
+export default function LifestylePackageSection({content}: LifestylePackagesProps) {
     return (
         <div className="w-full">
       

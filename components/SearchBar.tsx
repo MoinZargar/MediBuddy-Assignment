@@ -7,7 +7,7 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ 
-  placeholder = "",
+  placeholder = "Find lab tests, diagnostics centres",
   className = ""
 }: SearchBarProps) {
   return (

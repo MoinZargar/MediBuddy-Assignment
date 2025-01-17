@@ -1,3 +1,4 @@
+// PackageCard.tsx
 import { Package } from "../types/health-checkup"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -12,19 +13,19 @@ export default function PackageCard({ package: pkg }: PackageCardProps) {
     return null;
   }
   return (
-    <Card className="w-full bg-white shadow-2xl hover:shadow-3xl transition-shadow h-96 pt-4 pb-3">
-      <CardHeader className="p-4 pb-0">
+    <Card className="w-full h-full bg-white shadow-2xl hover:shadow-3xl transition-shadow flex flex-col">
+      <CardHeader className="p-4 pb-0 flex-shrink-0">
         <div className="flex items-start justify-between">
           <h3 className="text-lg font-bold text-[#050A4E]">{pkg.packageDisplayName}</h3>
         </div>
       </CardHeader>
-      <CardContent className="p-4 space-y-4 h-80">
-        <div className="flex items-center gap-2 text-[#4C57B9]">
+      <CardContent className="p-4 flex flex-col flex-grow space-y-4">
+        <div className="flex items-center gap-2 text-[#4C57B9] flex-shrink-0">
           <Clock className="w-4 h-4" />
           <span className="text-sm font-bold">{pkg.reportsTatText}</span>
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-2 flex-grow">
           <div className="font-semibold text-[#050A4E]">{pkg.testCount} Tests</div>
           <ul className="space-y-1">
             {pkg.testsSummary.map((test, index) => (
@@ -36,7 +37,7 @@ export default function PackageCard({ package: pkg }: PackageCardProps) {
           </ul>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 bg-[#F8FAFC] p-3 rounded-lg">
+        <div className="grid grid-cols-2 gap-4 bg-[#F8FAFC] p-3 rounded-lg flex-shrink-0">
           <div>
             <div className="text-sm font-medium text-[#050A4E]">Fasting</div>
             <div className="text-sm ">{pkg.fastingHoursText}</div>
@@ -50,7 +51,7 @@ export default function PackageCard({ package: pkg }: PackageCardProps) {
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-2">
+        <div className="flex items-center justify-between pt-2 flex-shrink-0">
           <div className="flex items-baseline gap-2">
             <span className="text-xl font-bold">₹ {pkg.price}</span>
             {pkg.priceRange > pkg.price && (
@@ -77,7 +78,7 @@ export default function PackageCard({ package: pkg }: PackageCardProps) {
         </div>
 
         {pkg.discountInfo.coupon && (
-          <div className="text-xs text-[#4C57B9] bg-[#EEF4FF] p-2 rounded text-center">
+          <div className="text-xs text-[#4C57B9] bg-[#EEF4FF] p-2 rounded text-center flex-shrink-0">
             Use code {pkg.discountInfo.coupon} for additional discount
           </div>
         )}

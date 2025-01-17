@@ -1,9 +1,11 @@
 # MediBuddy
 
 MediBuddy Landing page built with Next.js and TypeScript.
+
 ## Hosted Link
-medi-buddy-assignment-fawn.vercel.app
- 
+
+View the live application: [MediBuddy](https://medi-buddy-assignment-fawn.vercel.app)
+
 ## Installation
 
 Follow these steps to get the application running on your local machine:
