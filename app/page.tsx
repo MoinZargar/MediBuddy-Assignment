@@ -12,6 +12,7 @@ import TrustStats from '../components/TrustStats';
 import FeedbackSection from '../components/FeedbackSection';
 import WorkFlow from '../components/WorkFlow';
 import SafeLabsSection from '../components/safeLabsSection';
+import FaqSection from '../components/FaqSection';
 
 async function getContent(): Promise<PageContent[]> {
     const response = await axios.get('https://677f757b0476123f76a68a42.mockapi.io/api/labs/v1/page_config');
@@ -39,6 +40,7 @@ export default async function Home() {
         <FeedbackSection content={content[5]}/>
         <WorkFlow />
         <SafeLabsSection />
+        <FaqSection content={content[6]}/>
       </main>
    
   );
