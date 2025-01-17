@@ -2,21 +2,21 @@ import React from 'react';
 import { Building2, FlaskConical, MapPin, ShieldCheck } from 'lucide-react';
 export default function TrustStats() {
   return (
-    <div className="p-6">
+    <div className="p-6 py-8">
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-xl font-bold">
-          <span className="text-gray-900">Trusted by </span>
-          <span className="text-blue-600">20,00,000+</span>
+        <h2 className="text-3xl font-bold mb-2">
+          <span className="text-gray-900 font-Lexend-Deca">Trusted by </span>
+          <span className="text-blue-600 font-Lexend-Deca">20,00,000+</span>
           <br />
-          <span className="text-navy-900">Users Every month</span>
+          <span className="text-navy-900 font-bold font-Lexend-Deca">Users Every month</span>
         </h2>
         
         <ShieldCheck className="w-12 h-12 text-green-600" />
       </div>
 
-      {/* Stats Row */}
-      <div className="flex items-start justify-between gap-4">
+     
+      <div className="flex flex-wrap items-start justify-center gap-4 lg:justify-between">
         {/* Diagnostic Centres */}
         <div className="flex items-start gap-3">
           <div className="text-blue-600">
@@ -53,4 +53,3 @@ export default function TrustStats() {
     </div>
   );
 };
-

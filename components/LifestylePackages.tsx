@@ -6,7 +6,6 @@ interface LifestylePackagesProps {
     content: LifestylePackageSectionType;
 }
 export default function LifestylePackages({content}: LifestylePackagesProps) {
-    console.log(content);
     return (
         <div className="w-full">
       

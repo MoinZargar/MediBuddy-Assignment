@@ -9,6 +9,9 @@ import BookLabTestSection from '../components/BookLabTestSection';
 import LifestylePackages from '../components/LifestylePackages';
 import LabsVisited from '../components/LabsVisited';
 import TrustStats from '../components/TrustStats';
+import FeedbackSection from '../components/FeedbackSection';
+import WorkFlow from '../components/WorkFlow';
+import SafeLabsSection from '../components/safeLabsSection';
 
 async function getContent(): Promise<PageContent[]> {
     const response = await axios.get('https://677f757b0476123f76a68a42.mockapi.io/api/labs/v1/page_config');
@@ -33,6 +36,9 @@ export default async function Home() {
         <LabsVisited />
         <TrustStats />
         <LifestylePackages content={content[3]}/>
+        <FeedbackSection content={content[5]}/>
+        <WorkFlow />
+        <SafeLabsSection />
       </main>
    
   );

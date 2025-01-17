@@ -2,7 +2,7 @@ import { LabCardProps } from "../types/lab-card";
 
 export const labsData: LabCardProps[] = [
     {
-      name: "Apollo Diagnostics",
+      name: "MediBuddy Diagnostics",
       location: "Kormanangala, Bangalore",
       nextSlot: "Next Slot - 07:30 AM, Tomorrow",
       rating: 4.5,
