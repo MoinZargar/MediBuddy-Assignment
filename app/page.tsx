@@ -13,6 +13,7 @@ import FeedbackSection from '../components/FeedbackSection';
 import WorkFlow from '../components/WorkFlow';
 import SafeLabsSection from '../components/safeLabsSection';
 import FaqSection from '../components/FaqSection';
+import ActiveBookingSection from '../components/ActiveBookingSection';
 
 async function getContent(): Promise<PageContent[]> {
     const response = await axios.get('https://677f757b0476123f76a68a42.mockapi.io/api/labs/v1/page_config');
@@ -33,6 +34,7 @@ export default async function Home() {
         <IconSection content={content[0]}/>
         <BannerSection content={content[1]} /> 
         <HealthPackagesSection content={content[2]} />
+        <ActiveBookingSection />
         <BookLabTestSection content={content[2]}/>
         <LabsVisited />
         <TrustStats />
